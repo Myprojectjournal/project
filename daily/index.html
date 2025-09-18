@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Entries</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<style>
+  /* Header */
+  .site-header {
+    text-align: center;
+    padding: 4rem 2rem 2rem 2rem;
+    background: linear-gradient(135deg, #088a7b, #020f4e);
+    color: white;
+    border-radius: 0 0 30px 30px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+  }
+
+  .site-header h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .site-header p {
+    font-size: 1.2rem;
+    font-style: italic;
+  }
+
+  /* Cards container */
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    padding: 3rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  /* Individual daily card */
+  .daily-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: #1e3c72;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .daily-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Card date */
+  .card-date {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+
+  /* Card description */
+  .card-desc {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+  }
+</style>
+
+<body>
+
+  <header class="site-header">
+    <h1 style="color: white; ;">My Daily Entries</h1>
+    <p style="font-size: 120%;">Explore each day’s of my life observations of the Demonic Voices, wins, and lessons
+      learned.</p>
+  </header>
+
+  <main class="daily-landing">
+    <div class="cards-container">
+      <a class="daily-card" href="./Dates/2025-09-12.html">
+        <div class="card-date"> Fri Sep 12 2025</div>
+        <div class="card-desc">Observations, wins, lessons, and reflections for this day.</div>
+      </a>
+
+      <a class="daily-card" href="./Dates/2025-09-13.html">
+        <div class="card-date">Sun Sep 13 2025</div>
+        <div class="card-desc">Observations, wins, lessons, and reflections for this day.</div>
+      </a>
+
+      <a class="daily-card" href="./Dates/2025-09-14.html">
+        <div class="card-date">Mon Sep 14 2025</div>
+        <div class="card-desc">Observations, wins, lessons, and reflections for this day.</div>
+      </a>
+      <a class="daily-card" href="./Dates/2025-09-15.html">
+        <div class="card-date">Tue Sep 15 2025</div>
+        <div class="card-desc">Observations, wins, lessons, and reflections for this day.</div>
+      </a>
+      <a class="daily-card" href="./Dates/2025-09-16.html">
+        <div class="card-date">Wed Sep 16 2025</div>
+        <div class="card-desc">Observations, wins, lessons, and reflections for this day.</div>
+      </a>
+      <!-- Add more daily cards here -->
+    </div>
+  </main>
+
+</body>
+
+</html>
