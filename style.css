@@ -1,23 +1,56 @@
 body {
   font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
-  background: url("https://www.transparenttextures.com/patterns/paper-fibers.png");
-  background-color: #f0eee9;
-  /* soft paper color */
-  background-attachment: fixed;
+   background:url(../NOTEBOOK/images/paper-fibers.png);
+    background-attachment: fixed;
+  ;
+  
 }
 
-/* Hero Section Styling */
+/* Navigation Bar */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  background: linear-gradient(145deg, #08b542, #03197a);
+  padding: 15px;
+  flex-wrap: wrap;
+  border-radius: 6px;
+}
+
+.nav-btn {
+  background-color: white;
+  color: rgb(2, 72, 2);
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.nav-btn:hover {
+  background-color: #45a049;
+  color: white;
+}
+.about-icon {
+  zoom: 10%;
+  font-size: 6rem;            /* size of the icon */
+  color: #4facfe;             /* icon color */
+  background: rgba(255,255,255,0.1); /* slight background for style */
+  padding: 3rem;              /* space around icon */
+  border-radius: 50%;         /* circular shape */
+  display: flex;
+  align-items: center;
+  justify-content: center;}
+
+/* jorunal Section Styling */
 .journal-hero {
   background: #070264;
   /* deep navy background */
   color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 400px;
   /* tall hero section */
   padding: 3rem 1rem;
   text-align: center;
@@ -28,9 +61,9 @@ body {
 }
 
 .journal-content h1 {
-  font-size: 3rem;
+  font-size: 3em;
   font-weight: 700;
-  margin-bottom: 1rem;
+  margin-bottom: 1em;
   line-height: 1.2;
 }
 
@@ -66,79 +99,16 @@ body {
   background-color: #fdd835;
 }
 
-/* Navigation Bar */
-nav {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  background: linear-gradient(145deg, #08b542, #03197a);
-  padding: 15px;
-  flex-wrap: wrap;
-  border-radius: 6px;
-}
 
-.nav-btn {
-  background-color: white;
-  color: rgb(2, 72, 2);
-  padding: 10px 18px;
-  border: none;
-  border-radius: 8px;
-  font-size: 16px;
-  font-weight: bold;
-  text-decoration: none;
-  cursor: pointer;
-  transition: 0.3s;
-  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
-}
 
-.nav-btn:hover {
-  background-color: #45a049;
-  color: white;
-}
-
-/* Main Title */
-header {
-  text-align: center;
-  padding: 40px 20px;
-  background: #e8f5e9;
-
-}
-
-/* Hero Section */
-.hero {
-  background: linear-gradient(135deg, #1a237e, #3f51b5);
-  /* gradient blue */
-  color: white;
-  text-align: center;
-  padding: 6rem 1rem;
-  /* tall section for impact */
-  border-bottom-left-radius: 50px;
-  border-bottom-right-radius: 50px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
 
 
 
 
 /* Sections */
-.content {
-  max-width: 900px;
-  margin: auto;
-  padding: 20px;
-}
 
-section {
-  background: white;
-  padding: 20px;
-  margin: 20px 0;
-  border-radius: 10px;
-  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
-}
 
-section h2 {
-  color: #333;
-  margin-bottom: 10px;
-}
+
 
 section p {
   line-height: 1.6;
@@ -198,17 +168,7 @@ li {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
   position: relative;
 }
-/* About me Icon */
-.about-icon {
-  zoom: 10%;
-  font-size: 6rem;            /* size of the icon */
-  color: #4facfe;             /* icon color */
-  background: rgba(255,255,255,0.1); /* slight background for style */
-  padding: 3rem;              /* space around icon */
-  border-radius: 50%;         /* circular shape */
-  display: flex;
-  align-items: center;
-  justify-content: center;}
+
  
 /* ===== Section Heading ===== */
 .what-youll-find h2 {
@@ -252,11 +212,30 @@ li {
 }
 
 /* ===== Individual Cards ===== */
+.about-style{
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+  width: 220px;
+  border-radius: 25px;
+  color: rgb(251, 252, 252);
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+  gap: 15px;
+  font-size: 10px;
+}
+
+/* ===== Individual Cards ===== */
 .explore-card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 30px 25px;
+  padding-top: 20px;
   width: 220px;
   border-radius: 25px;
   color: rgb(251, 252, 252);
@@ -270,7 +249,7 @@ li {
 
 /* ===== Card Gradients About me ===== */
 
-.explore-card.about {
+.about-style.card {
   background: linear-gradient(145deg, #680404, #046519);}
 
 .explore-card.daily {
@@ -296,8 +275,100 @@ li {
   box-shadow: 0 12px 25px rgba(0, 0, 0, 0.18);
 }
 
+.about-style:hover{  
+  transform: translatey(-8px) scale(1.05);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.18);
+}
 
 
+/* Contact Section */
+/* Contact Section Full-Width Background */
+
+.contact-section {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: #eef6fc;
+  /* soft light blue */
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+
+.contact-section .contact-form {
+  max-width: 1000%;
+  /* keeps form centered and readable */
+  width: 100%;
+  background: #eef6fc;
+  /* keeps the form on light card for contrast */
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+
+.contact-section h2 {
+  color: #1a237e;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact-section p {
+  color: #34495e;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+/* Form Styling */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.contact-form label {
+  text-align: left;
+  font-weight: bold;
+  color: #1a237e;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #1a237e;
+  box-shadow: 0 0 8px rgba(26, 35, 126, 0.2);
+  outline: none;
+}
+
+.contact-form button {
+  padding: 14px 28px;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #ffeb3b;
+  /* bright accent yellow */
+  color: #1a237e;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #fdd835;
+  transform: translateY(-3px);
+}
 
 footer {
   background: #1a237e;
@@ -644,93 +715,4 @@ header nav a.active {
 .goal-card:hover {
   transform: translateY(-5px);
   background: #d9ebfa;
-}
-
-/* Contact Section */
-/* Contact Section Full-Width Background */
-
-
-
-.contact-section .contact-form {
-  max-width: 700px;
-  /* keeps form centered and readable */
-  width: 100%;
-  background: #eef6fc;
-  /* keeps the form on light card for contrast */
-  padding: 2rem;
-  border-radius: 20px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-}
-
-.contact-section {
-  max-width: 800px;
-  margin: 3rem auto;
-  padding: 2rem;
-  background: #eef6fc;
-  /* soft light blue */
-  border-radius: 15px;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
-  text-align: center;
-  font-family: 'Arial', sans-serif;
-}
-
-.contact-section h2 {
-  color: #1a237e;
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-}
-
-.contact-section p {
-  color: #34495e;
-  margin-bottom: 2rem;
-  font-size: 1.1rem;
-}
-
-/* Form Styling */
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 1.2rem;
-}
-
-.contact-form label {
-  text-align: left;
-  font-weight: bold;
-  color: #1a237e;
-}
-
-.contact-form input,
-.contact-form textarea {
-  padding: 12px;
-  border-radius: 10px;
-  border: 1px solid #ccc;
-  font-size: 1rem;
-  width: 100%;
-  box-sizing: border-box;
-  transition: border 0.3s, box-shadow 0.3s;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-  border-color: #1a237e;
-  box-shadow: 0 0 8px rgba(26, 35, 126, 0.2);
-  outline: none;
-}
-
-.contact-form button {
-  padding: 14px 28px;
-  font-size: 1rem;
-  font-weight: bold;
-  background-color: #ffeb3b;
-  /* bright accent yellow */
-  color: #1a237e;
-  border: none;
-  border-radius: 12px;
-  cursor: pointer;
-  transition: transform 0.2s, background 0.3s;
-}
-
-.contact-form button:hover {
-  background-color: #fdd835;
-  transform: translateY(-3px);
 }
